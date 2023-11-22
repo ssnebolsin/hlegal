@@ -324,6 +324,7 @@ template {
   --gradient-red: linear-gradient(323deg, #F0145A 6.7%, #693264 70.36%);
   --gradient-supersoft: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   --gradient-red-text: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  --gradient-red-text-revesed: linear-gradient(to left, #F0145A 0%, #EF8080 100%);
 }
 
 @font-face {
@@ -335,7 +336,7 @@ template {
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -377,8 +378,8 @@ h1, h2, h3, h4, h5, h6, a {
   background-color: none;
   top: 0;
   padding: 50px 160px 0;
-  width: 1600px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1600px;
 }
 .header__contacts {
   display: flex;
@@ -435,21 +436,69 @@ h1, h2, h3, h4, h5, h6, a {
   align-items: center;
 }
 
-.logo {
+.offer {
   background-color: var(--main-regular);
+}
+.offer__logo {
   text-align: center;
   position: relative;
 }
-.logo__text {
+.offer__text {
   position: absolute;
   top: 361px;
   left: 530px;
   min-width: 800px;
 }
-.logo__btn-scroll {
+.offer__btn-scroll {
   position: absolute;
   bottom: 30px;
   left: 50%;
+}
+.offer__qualities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 74.5px 180px;
+}
+.offer__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-right: 60px;
+  gap: 30px;
+  list-style: none;
+  font-size: 36px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+}
+.offer__list-link {
+  color: var(--grey-text);
+  text-decoration: none;
+}
+.offer__list-link-active {
+  background: var(--gradient-red-text-revesed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.offer__list :hover,
+.offer__list :focus {
+  color: var(--accent);
+}
+.offer__quality-desctiption {
+  width: 100%;
+  max-width: 581px;
+  padding-left: 60px;
+}
+.offer__quality-desctiption-header {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.offer__quality-desctiption-text {
+  font-size: 19px;
+  line-height: 30px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
