@@ -437,7 +437,7 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 .offer {
-  background-color: var(--main-regular);
+  background: var(--gradient-supersoft);
 }
 .offer__logo {
   text-align: center;
@@ -499,6 +499,35 @@ h1, h2, h3, h4, h5, h6, a {
   font-size: 19px;
   line-height: 30px;
   margin: 0;
+}
+.offer__services {
+  padding: 0 160px;
+  max-width: 1600px;
+  width: 100%;
+}
+.offer__services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.offer__services-article {
+  max-width: 493.33px;
+  width: 100%;
+}
+.offer__services-header {
+  text-decoration: none;
+  color: var(--active-regular);
+  font-size: 22px;
+  line-height: 26.82px;
+}
+.offer__services-description {
+  line-height: 26px;
+}
+.offer__services-link {
+  text-decoration: none;
+  color: var(--active-regular);
+  .
+            font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

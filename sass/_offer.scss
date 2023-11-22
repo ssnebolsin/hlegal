@@ -1,5 +1,5 @@
 .offer{
-    background-color: var(--main-regular);
+    background: var(--gradient-supersoft);
     &__logo{
         text-align: center;
         position: relative;
@@ -29,8 +29,6 @@
         padding-right: 60px;
         gap: 30px;
         list-style: none;
-        // width: 100%;
-        // max-width: 375px;
         font-size: 36px;
         border-right: 4px solid rgba(255,255,255, 0.3);
         &-link{
@@ -61,6 +59,34 @@
             font-size: 19px;
             line-height: 30px;
             margin: 0;
+        }
+    }
+    &__services{
+        padding: 0 160px;
+        max-width: 1600px;
+        width: 100%;
+        &-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+        &-article{
+            max-width: 493.33px;
+            width: 100%;
+        }
+        &-header{
+            text-decoration: none;
+            color: var(--active-regular);
+            font-size: 22px;
+            line-height: 26.82px;
+        }
+        &-description{
+            line-height: 26px;
+        }
+        &-link{
+            text-decoration: none;
+            color: var(--active-regular);.
+            font-size: 14px;
         }
     }
 }
