@@ -568,7 +568,6 @@ h1, h2, h3, h4, h5, h6, a {
   padding-top: 60px;
   max-width: 1600px;
   width: 100%;
-  gap: 30px;
 }
 .team__link {
   display: block;
@@ -583,6 +582,7 @@ h1, h2, h3, h4, h5, h6, a {
 .team__description {
   text-align: left;
   background-color: var(--grey-bg);
+  padding-left: 30px;
 }
 .team__member {
   color: var(--grey-text);
@@ -593,6 +593,36 @@ h1, h2, h3, h4, h5, h6, a {
   color: var(--grey-text);
   font-size: 14px;
   line-height: 22px;
+}
+
+.clients {
+  padding-bottom: 60px;
+}
+.clients__title {
+  font-size: 14px;
+  line-height: 17.07px;
+  color: var(--main-regular);
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.clients__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.clients__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.clients__img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
