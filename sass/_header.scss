@@ -1,16 +1,16 @@
 .header{
     display: grid;
-    position: absolute;
+    position: absolute;    
+    width: 100%;
+    max-width: 1600px;
     z-index: 1;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: none;
-    // padding-left: calc(50vw - 724px);
-    // padding-right: calc(50vw - 724px);
     top: 0;
-    padding: 50px 160px 0;
-    width: 100%;
-    max-width: 1600px;
+    padding-top: 50px;
+    // left: 60px;
+
     &__contacts{
         display: flex;
         justify-content: end;

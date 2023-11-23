@@ -1,0 +1,32 @@
+.team {
+    display: flex;
+    padding-top: 60px;
+    max-width: 1600px;
+    width: 100%;
+    gap: 30px;
+    &__link{
+        display: block;
+        padding-top: 30px;
+    }
+    &__header{
+        font-size: 38px;
+        background: var(--gradient-red-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__description{
+        text-align: left;
+        background-color: var(--grey-bg);
+    }
+    &__member{
+        color: var(--grey-text);
+        font-weight: 700;
+        line-height: 19.5px;
+    }
+    &__position{
+        color: var(--grey-text);
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
