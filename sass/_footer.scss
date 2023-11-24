@@ -1,0 +1,48 @@
+.footer{
+    background-color: var(--grey-bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__address{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        height: 20px;
+        &-name{
+            display: block;
+            color: var(--main-regular);
+            line-height: 19.5px;
+            margin: 0;
+        }
+        &-map{
+            display: block;
+            text-decoration: none;
+            color: var(--active-regular);
+        }
+    }
+    &__copyrights{
+        display: flex;
+        color: var(--grey-text);
+        text-align: right;
+        justify-content: end;
+        align-items: center;
+        margin: 0;
+        height: 20px;
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-tel{
+            text-decoration: none;
+            color: var(--main-alt);
+        }
+        &-email{
+            text-decoration: none;
+            color: var(--active-regular);
+        }
+    }
+}
