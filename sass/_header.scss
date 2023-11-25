@@ -15,7 +15,8 @@
         display: flex;
         justify-content: end;
         align-items: center;
-        // gap: 18px;
+        // position: relative;
+        gap: 6px;
     }
     &__link{
         color: currentColor;
@@ -23,28 +24,37 @@
         &:hover,
         &:focus{
             color: var(--accent);
+            transition: .3s;
         }
         &-address{
             font-weight: 400;
+            line-height: 19.5px;
         }
-        &-dot{
-            position: relative;
-            padding-left: 18px;
+        &-tel{
+            line-height: 19.5px;
         }
-        &-dot:before{
-            content: "";
-            width: 6px;
-            height: 6px;
-            background: #fff;
-            display: block;
-            border-radius: 50%;
-            position: absolute;
-            // top: 0px;
-            left: 7px;
-            top: 7px;
-            // translate: -50% -50%;
+        &-fb-logo:hover path{
+            fill: var(--accent);
+            transition: .3s;
+        }
+        // &-dot{
+        //     // position: relative;
+        //     padding-left: 18px;
+        // }
+        // &-dot:before{
+        //     content: "";
+        //     width: 6px;
+        //     height: 6px;
+        //     background: #fff;
+        //     display: block;
+        //     border-radius: 50%;
+        //     position: absolute;
+        //     // top: 0px;
+        //     // left: 60px;
+        //     top: 14px;
+        //     // translate: -50% -50%;
 
-        }
+        // }
     }
     &__link_lang{
         padding: 5px 7px;

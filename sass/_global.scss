@@ -19,3 +19,17 @@ h1,h2,h3,h4,h5,h6,a{
         padding-right: calc(50vw - 300px);
     }
 }
+.link-title{
+    text-decoration: none;
+    color: var(--active-regular);
+    &:focus,
+    &:hover{
+        color: var(--accent);
+        transition: .3s;
+    }
+    &:hover path,
+    &:focus path {
+        stroke:var(--accent);
+        transition: .3s;
+    }
+}

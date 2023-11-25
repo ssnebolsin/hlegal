@@ -369,6 +369,19 @@ h1, h2, h3, h4, h5, h6, a {
   }
 }
 
+.link-title {
+  text-decoration: none;
+  color: var(--active-regular);
+}
+.link-title:focus, .link-title:hover {
+  color: var(--accent);
+  transition: 0.3s;
+}
+.link-title:hover path, .link-title:focus path {
+  stroke: var(--accent);
+  transition: 0.3s;
+}
+
 .header {
   display: grid;
   position: absolute;
@@ -385,6 +398,7 @@ h1, h2, h3, h4, h5, h6, a {
   display: flex;
   justify-content: end;
   align-items: center;
+  gap: 6px;
 }
 .header__link {
   color: currentColor;
@@ -392,24 +406,18 @@ h1, h2, h3, h4, h5, h6, a {
 }
 .header__link:hover, .header__link:focus {
   color: var(--accent);
+  transition: 0.3s;
 }
 .header__link-address {
   font-weight: 400;
+  line-height: 19.5px;
 }
-.header__link-dot {
-  position: relative;
-  padding-left: 18px;
+.header__link-tel {
+  line-height: 19.5px;
 }
-.header__link-dot:before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  left: 7px;
-  top: 7px;
+.header__link-fb-logo:hover path {
+  fill: var(--accent);
+  transition: 0.3s;
 }
 .header__link_lang {
   padding: 5px 7px;
@@ -456,6 +464,13 @@ h1, h2, h3, h4, h5, h6, a {
   bottom: 30px;
   left: 50%;
 }
+.offer__btn-scroll :hover circle,
+.offer__btn-scroll :focus circle,
+.offer__btn-scroll :focus path,
+.offer__btn-scroll :hover path {
+  stroke: var(--accent);
+  transition: 0.3s;
+}
 .offer__qualities {
   display: flex;
   justify-content: center;
@@ -485,6 +500,7 @@ h1, h2, h3, h4, h5, h6, a {
 .offer__list :hover,
 .offer__list :focus {
   color: var(--accent);
+  transition: 0.3s;
 }
 .offer__quality-desctiption {
   width: 100%;
@@ -517,8 +533,6 @@ h1, h2, h3, h4, h5, h6, a {
   width: 100%;
 }
 .offer__services-header {
-  text-decoration: none;
-  color: var(--active-regular);
   font-size: 22px;
   line-height: 26.82px;
 }
@@ -527,15 +541,8 @@ h1, h2, h3, h4, h5, h6, a {
   margin: 0;
 }
 .offer__services-link {
-  text-decoration: none;
-  color: var(--active-regular);
   font-size: 14px;
-}
-.offer__services-link:hover, .offer__services-link :focus {
-  color: var(--accent);
-}
-.offer__services-link-svg :hover {
-  stroke: var(--accent);
+  line-height: 17.07px;
 }
 .offer__services-title {
   font-size: 38px;
@@ -564,35 +571,60 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 .team {
-  display: flex;
   padding-top: 60px;
   max-width: 1600px;
   width: 100%;
 }
+.team__wrapper {
+  display: flex;
+}
+.team__photo {
+  height: 298px;
+}
 .team__link {
   display: block;
   padding-top: 30px;
-}
-.team__header {
-  font-size: 38px;
-  background: var(--gradient-red-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .team__description {
   text-align: left;
   background-color: var(--grey-bg);
   padding-left: 30px;
 }
+.team__header {
+  font-size: 38px;
+  background: var(--gradient-red-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
 .team__member {
   color: var(--grey-text);
   font-weight: 700;
   line-height: 19.5px;
+  margin: 0;
+  padding-bottom: 6px;
 }
 .team__position {
   color: var(--grey-text);
   font-size: 14px;
   line-height: 22px;
+  margin: 0;
+}
+.team__nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 30px;
+}
+.team__nav-dot {
+  opacity: 0.2;
+  fill: var(--active-regular);
+  padding-bottom: 60px;
+}
+.team__nav-dot-active {
+  opacity: 1;
 }
 
 .clients {
@@ -605,6 +637,7 @@ h1, h2, h3, h4, h5, h6, a {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 30px;
+  margin: 0;
 }
 .clients__wrapper {
   display: flex;
@@ -629,8 +662,11 @@ h1, h2, h3, h4, h5, h6, a {
   background-color: var(--grey-bg);
 }
 .recommended__link {
-  text-decoration: none;
+  display: block;
   text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 .recommended__title {
   font-size: 38px;
@@ -716,6 +752,9 @@ h1, h2, h3, h4, h5, h6, a {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.footer__contacts-fb:hover path, .footer__contacts-fb:focus path {
+  fill: var(--accent);
 }
 .footer__contacts-tel {
   text-decoration: none;

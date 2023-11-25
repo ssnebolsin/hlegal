@@ -36,6 +36,10 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        &-fb:hover path,
+        &-fb:focus path{
+            fill: var(--accent);
+        }
         &-tel{
             text-decoration: none;
             color: var(--main-alt);
