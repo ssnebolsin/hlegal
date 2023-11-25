@@ -622,6 +622,12 @@ h1, h2, h3, h4, h5, h6, a {
   opacity: 0.2;
   fill: var(--active-regular);
   padding-bottom: 60px;
+  cursor: pointer;
+}
+.team__nav-dot:hover, .team__nav-dot:focus {
+  fill: var(--active-regular);
+  opacity: 1;
+  transition: 0.3;
 }
 .team__nav-dot-active {
   opacity: 1;

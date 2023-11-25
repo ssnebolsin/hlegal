@@ -55,6 +55,13 @@
             opacity: .2;
             fill: var(--active-regular);
             padding-bottom: 60px;
+            cursor: pointer;
+        }
+        &-dot:hover,
+        &-dot:focus{
+            fill: var(--active-regular);
+            opacity: 1;
+            transition: .3;
         }
         &-dot-active{
             opacity: 1;
