@@ -9,18 +9,85 @@
     background-color: none;
     top: 0;
     padding-top: 50px;
-    // left: 60px;
+    @media screen and (max-width: 1680px) {
+        max-width: 1320px;
+    }
+    @media screen and (max-width: 1420px) {
+        max-width: 904px;
+    }
+    @media screen and (max-width: 960px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px;
+        max-width: 720px;
+        padding-right: 0;
+    }
+    @media screen and (max-width: 740px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px;
+        max-width: 500px;
+        padding-right: 0;
+    }
+    @media screen and (max-width: 720px) {
+        padding-top: 12.5px;
+        padding-right: 30px;
+        
+    }
+    // &__contacts-wrapper{
+    //     @media screen and (max-width: 720px) {
+    //         // background-color: rgba(245, 245, 250, 0.20);
+    //         // max-width: 500px;
+    //         // width: 100%;
+    //         // padding: 0;
+    //         // margin: 0;
+    //     }
+    // }
 
     &__contacts{
         display: flex;
         justify-content: end;
         align-items: center;
-        // position: relative;
+        // max-width: 486px;
+        // width: 100%;
         gap: 6px;
+        @media screen and (max-width: 1420px) {
+            min-width: 486px;
+        }
+        @media screen and (max-width: 960px) {
+            justify-content: start;
+            order: 1;
+            padding: 0; 
+        }
+        @media screen and (max-width: 720px) {
+            justify-content: space-between;
+            max-width: 344px;
+            width: 100%;
+            text-align: center;
+            ::after{
+                content: "";
+                width: 100%;
+                height: 45px;
+                background: rgba(245, 245, 250, 0.10);
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    &__separator{
+        @media screen and (max-width: 720px) {
+            display: none;
+        }
     }
     &__link{
         color: currentColor;
         text-decoration: none;
+        @media screen and (max-width: 720px) {
+            max-width: 344px;
+            width: 100%;
+
+        }
         &:hover,
         &:focus{
             color: var(--accent);
@@ -29,13 +96,29 @@
         &-address{
             font-weight: 400;
             line-height: 19.5px;
+            @media screen and (max-width: 720px) {
+                display: none;
+                max-width: 344px;
+            }
         }
         &-tel{
             line-height: 19.5px;
         }
+        &-fb-logo{
+            @media screen and (max-width: 720px) {
+                display: none;
+            }
+        }
         &-fb-logo:hover path{
             fill: var(--accent);
             transition: .3s;
+            
+        }
+        &-active{
+            color: var(--accent);
+            border-bottom: 2px solid currentColor;
+            padding-bottom: 3px;
+
         }
         // &-dot{
         //     // position: relative;
@@ -67,18 +150,132 @@
     :nth-child(1){
         grid-row: span 2;
     }
+
     &__nav{
-        display: flex;
-        gap: 15px;
-        list-style: none;
-        justify-content: end;
-        align-items: center;
-        margin: 0;
-        padding-top: 16px;
+        &-list{
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            justify-content: end;
+            align-items: center;
+            margin: 0;
+            padding-top: 16px; 
+            @media screen and (max-width: 960px) {
+                justify-content: start;
+                order: 3;
+                padding: 0;
+            }
+            @media screen and (max-width: 720px) {
+                display: none;
+            }
+        }
+
+        &-close{
+            display: none;
+            @media screen and (max-width: 720px) {
+                display: block;
+                margin-left: auto;
+                margin-right: 10vw;
+            }
+        }
+        @media screen and (max-width: 960px) {
+            justify-content: start;
+            order: 3;
+            padding: 0;
+        }
+        @media screen and (max-width: 720px) {
+            display: none;
+        }
+
+    }
+    @media screen and (max-width: 720px) {
+    #burger-menu:checked{
+        & ~ .header__nav{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            color: var(--active-regular);
+            background: #fff;
+            width: 100%;
+            top: 180%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            gap: 15px;
+            // height: 351px;
+            justify-content:  end;
+            box-sizing: border-box;
+            padding-bottom: 12px;
+            .header__nav-list{
+                display: flex;
+                flex-direction: column;
+
+            }
+            .header__link{
+                display: block;
+                background: var(--grey-bg);
+                padding: 7px 112px;
+                box-sizing: border-box;
+                width: 335px;
+                text-align: center;
+                border-radius: 12px;
+                &-active{
+                    background: var(--grey-separator);
+                    border: none;
+                    color: var(--active-regular);
+                }
+                &-current-page{
+                    color: var(--accent);
+                }
+            }
+            }
+        }
+    }
+    &__logo-wrapper{
+        @media screen and (max-width: 720px) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            max-width: 344px;
+            width: 100%;
+            align-items: center;
+            order: 2;
+        }
+    }
+    &__logo-menu{
+        display: none;
+        @media screen and (max-width: 720px) {
+            display: block;
+        }
+        &-svg path{
+            stroke: #FFF;
+        }
     }
     &__logo{
         display: flex;
         justify-content: start;
         align-items: center;
+        &-slash, &-srv{
+            display: none;
+            @media screen and (max-width: 720px) {
+                display: block;
+            }
+        }
+        &-slash, &-srv, &-main{
+            @media screen and (max-width: 720px) {
+                max-width: 109px;
+                height: auto;
+            }
+        }
+        @media screen and (max-width: 960px) {
+            justify-content: start;
+            order: 2;
+        }
+    }
+    &-services{
+        &-logo{
+            display: flex;
+            align-items: flex-start;
+            gap: 4px;
+        }
     }
 }

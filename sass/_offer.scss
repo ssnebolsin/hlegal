@@ -6,11 +6,18 @@
         text-align: center;
         position: relative;
     }
+    &__img{
+        @media screen and (max-width: 960px) {
+            width: 100%;
+            height: auto;
+        }
+    }
     &__text{
         position: absolute;
-        top: 361px;
-        left: 530px;
-        min-width: 800px;
+        // min-width: 800px;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     &__btn-scroll{
         position: absolute;
@@ -28,18 +35,35 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 74.5px 180px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @media screen and (max-width: 960px) {
+            flex-direction: column;
+            justify-content: start;
+            // padding-right: 0;
+        }
     }
     &__list{
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding: 0;
         padding-right: 60px;
         gap: 30px;
         list-style: none;
         font-size: 36px;
         border-right: 4px solid rgba(255,255,255, 0.3);
+        @media screen and (max-width: 960px) {
+            flex-direction: row;
+            border-right: none;
+            // border-bottom: 4px solid rgba(255,255,255, 0.3);
+            padding-bottom: 60px;
+            justify-content: start;
+            align-items: start;
+            max-width: 100%;
+            overflow: auto;
+            padding-left: 0;
+            margin-left: 60px;
+        }
         &-link{
             color: var(--grey-text);
             text-decoration: none;
@@ -47,6 +71,9 @@
                 background: var(--gradient-red-text-revesed);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+            }
+            @media screen and (max-width: 960px) {
+                white-space: nowrap;
             }
         }
         :hover,
@@ -57,32 +84,73 @@
     }
     &__quality-desctiption{
         width: 100%;
-        max-width: 581px;
+        max-width: 861px;
         padding-left: 60px;
         &-header{
             font-size: 30px;
             padding: 0;
             margin: 0;
             padding-bottom: 30px;
+            @media screen and (max-width: 960px) {
+                padding-top: 60px;
+            }
         }
         &-text{
             font-size: 19px;
             line-height: 30px;
             margin: 0;
         }
+        @media screen and (max-width: 960px) {
+            padding-left: 0;
+            border-top: 4px solid rgba(255,255,255, 0.3);
+        }
     }
     &__services{
         max-width: 1600px;
         width: 100%;
+        @media screen and (max-width: 1680px) {
+            max-width: 1320px;
+        }
+        @media screen and (max-width: 1420px) {
+            max-width: 904px;
+        }
+        @media screen and (max-width: 960px) {
+            max-width: 648px;
+            // padding-right: 0;
+        }
+        @media screen and (max-width: 740px) {
+            max-width: 648px;
+            padding-right: 0;
+        }
+        @media screen and (max-width: 740px) {
+            max-width: 315px;
+            padding-right: 0;
+        }
+
         &-wrapper{
             display: flex;
             flex-wrap: wrap;
             gap: 60px;
             padding-bottom: 60px;
+            @media screen and (max-width: 740px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
         &-article{
             max-width: 493.33px;
             width: 100%;
+            @media screen and (max-width: 1680px) {
+                max-width: 400px;
+            }
+            @media screen and (max-width: 1420px) {
+                max-width: 261.33px;
+            }
+            @media screen and (max-width: 960px) {
+                max-width: 294px;
+                // padding-right: 0;
+            }
         }
         &-header{
             font-size: 22px;
@@ -121,5 +189,10 @@
         display: block;
         border-radius: 0 0 12px 12px;
         margin: 0 40px;
+        margin-bottom: 60px;
+    }
+    &__services-title-services{
+        padding-top: 176px;
+    
     }
 }

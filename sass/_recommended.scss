@@ -22,11 +22,72 @@
         gap: 30px;
         padding-bottom: 30px;
         border-bottom: 2px solid var(--grey-separator);
+        @media screen and (max-width: 960px) {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr 1fr;
+            // :nth-child(3){
+            //     color: red;
+            //     width: auto;
+            //     grid-column: span 2;
+            // }
+            flex-wrap: wrap;
+        }
+        // :nth-child(3){
+        //     @media screen and (max-width: 960px) {
+        //        width: 500px;
+        //     //    color: red;
+        //     }
+        // }
     }
+    // @media screen and (max-width: 960px) {
+    // :nth-child(3){
+    //     color: red;
+    //     width: auto;
+    //     grid-column: span 2;
+    // }
+    // }
+    // &__item-3{
+    //     @media screen and (max-width: 960px) {
+    //         max-width: 420px;
+    //         width: 100%;
+    //         grid-column: span 2;
+    //     }
+    // }
+    // @media screen and (max-width: 960px) {
+    // &__item:nth-child(3){
+    //     grid-column: span 2;
+    //     }
+    // }
+
     &__item{
         max-width: 513.33px;
         width: 100%;
         background-color: #fff;
+        @media screen and (max-width: 1680px) {
+            max-width: 420px;
+        }
+        @media screen and (max-width: 1420px) {
+            max-width: 281.33px;
+        }
+        @media screen and (max-width: 960px) {
+            max-width: 309px;
+        }
+        @media screen and (max-width: 780px) {
+            max-width: 315px;
+            }  
+        &-full-width{
+            @media screen and (max-width: 960px) {
+                min-width: 648px;
+                }    
+                @media screen and (max-width: 780px) {
+                    min-width: 315px;
+                    }  
+            }
+        &-img{
+            width: 100%;
+            height: auto;
+        }
         &-header{
             display: block;
             text-decoration: none;
@@ -45,7 +106,7 @@
         }
         &-description{
             font-size: 14px;
-            color: var(--grey-text);
+            color: #000;
             line-height: 22px;
             margin: 0;
             padding: 15px 30px 30px;
