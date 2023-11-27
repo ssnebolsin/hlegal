@@ -30,6 +30,7 @@
         @media screen and (max-width: 720px) {
             flex-direction: column;
             gap: 10px;
+            max-width: 344px;
         &-dot-separator{
             display: none;
             }
@@ -49,6 +50,7 @@
             padding-top: 30px;
             padding-bottom: 30px;
             justify-content: center;
+            max-width: 344px;
         }
     }
     &__contacts{
@@ -71,6 +73,7 @@
         @media screen and (max-width: 720px) {
             flex-direction: column;
             gap: 10px;
+            min-width: 344px;
         &-dot-separator{
             display: none;
             }

@@ -18,6 +18,9 @@
         top: 48%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media screen and (max-width: 720px) {
+            top: 231px;
+        }
     }
     &__btn-scroll{
         position: absolute;
@@ -59,10 +62,15 @@
             padding-bottom: 60px;
             justify-content: start;
             align-items: start;
-            max-width: 100%;
+            // max-width: 420px;
+            width: 100%;
             overflow: auto;
             padding-left: 0;
-            margin-left: 60px;
+            // margin-left: 60px;
+            padding-right: 0;
+        }
+        @media screen and (max-width: 720px) {
+            // padding-right: 20px;
         }
         &-link{
             color: var(--grey-text);
