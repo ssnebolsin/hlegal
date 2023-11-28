@@ -22,10 +22,10 @@ h1,h2,h3,h4,h5,h6,a{
         padding-left: calc(50vw - 332px);
         padding-right: calc(50vw - 332px);
     }
-    @media screen and (max-width: 740px) {
-        padding-left: calc(50vw - 299px);
-        padding-right: calc(50vw - 299px);
-    }
+    // @media screen and (max-width: 740px) {
+    //     padding-left: calc(50vw - 299px);
+    //     padding-right: calc(50vw - 299px);
+    // }
     @media screen and (max-width: 720px) {
         padding-left: calc(50vw - 180px);
         padding-right: calc(50vw - 180px);

@@ -84,14 +84,14 @@
         @media screen and (max-width: 960px) {
             max-width: 309px;
         }
-        @media screen and (max-width: 740px) {
+        @media screen and (max-width: 720px) {
             max-width: 315px;
             }  
         &-full-width{
             @media screen and (max-width: 960px) {
                 min-width: 648px;
                 }    
-                @media screen and (max-width: 740px) {
+                @media screen and (max-width: 720px) {
                     min-width: 315px;
                     }  
             }

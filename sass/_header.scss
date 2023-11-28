@@ -2,7 +2,6 @@
     display: grid;
     position: absolute;    
     width: 100%;
-    // max-width: 1600px;
     z-index: 1;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -10,12 +9,6 @@
     top: 0;
     padding-top: 50px;
     box-sizing: border-box;
-    // @media screen and (max-width: 1680px) {
-    //     // max-width: 1320px;
-    // }
-    // @media screen and (max-width: 1420px) {
-    //     // max-width: 904px;
-    // }
     @media screen and (max-width: 960px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -84,8 +77,6 @@
         }
         &-tel{
             line-height: 19.5px;
-            // max-width: 104px;
-            // width: 100%;
         }
         &-fb-logo{
             @media screen and (max-width: 720px) {
@@ -226,6 +217,7 @@
     &__logo-wrapper{
         @media screen and (max-width: 960px) {
             order: 2;
+            // padding-bottom: 0;
         }
         @media screen and (max-width: 720px) {
             display: flex;
