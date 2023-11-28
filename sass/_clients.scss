@@ -1,5 +1,8 @@
 .clients{
     padding-bottom: 60px;
+    @media screen and (max-width: 720px) {
+       padding-bottom: 0;
+     }
     &__title{
         font-size: 14px;
         line-height: 17.07px;
@@ -24,12 +27,43 @@
              display: none;
             }
          }
+         @media screen and (max-width: 1024px) {
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: start;
+         }
+         @media screen and (max-width: 720px) {
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: center;
+         }
     }
     &__item{
         display: block;
         margin: 0;
         padding: 0;
         text-decoration: none;
+        @media screen and (max-width: 1720px) {
+            width: 360px;
+         }
+         @media screen and (max-width: 1440px) {
+            flex: 1 1 25%;
+         }
+         @media screen and (max-width: 768px) {
+            flex: 1 1 33%;
+         }
+         @media screen and (max-width: 720px) {
+            max-width: 375px;
+            flex: auto;
+
+         }
+        //  @media screen and (max-width: 1024px) {
+        //     width: 256px;
+        //  }
+        //  @media screen and (max-width: 1024px) {
+        //     padding-left: 0;
+        //     padding-right: 0;
+        //  }
 
 
     }
@@ -40,6 +74,10 @@
         text-decoration: none;
         width: 100%;
         height: auto;
+        @media screen and (max-width: 1024px) {
+            padding-left: 0;
+            padding-right: 0;
+         }
 
     }
 }
