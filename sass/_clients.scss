@@ -1,0 +1,45 @@
+.clients{
+    padding-bottom: 60px;
+    &__title{
+        font-size: 14px;
+        line-height: 17.07px;
+        color: var(--main-regular);
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: 720px) {
+            :nth-child(7),
+            :nth-child(8),
+            :nth-child(9),
+            :nth-child(10),
+            :nth-child(11),
+            :nth-child(12){
+             display: none;
+            }
+         }
+    }
+    &__item{
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+
+
+    }
+    &__img{
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        width: 100%;
+        height: auto;
+
+    }
+}
