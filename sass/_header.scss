@@ -193,7 +193,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             gap: 15px;
-            // height: 351px;
             justify-content:  end;
             box-sizing: border-box;
             // padding-bottom: 12px;
@@ -203,9 +202,8 @@
                 display: flex;
                 flex-direction: column;
                 background: #FFF;
-                margin-left: 8px;
-                margin-right: 8px;
-                // height: 351px;
+                // margin-left: 8px;
+                // margin-right: 8px;
                 padding-top: 64px;
                 border-radius: 12px 12px 0 0;
                 padding-bottom: 12px;
@@ -237,13 +235,7 @@
             display: flex;
             justify-content: space-between;
             flex-direction: row-reverse;
-            // max-width: 344px;
-            // width: 100%;
-            // align-items: center;
             order: 2;
-            // min-width: 344px;
-            // width: 100%;
-            // text-align: center;
             padding-top: 15px;
             padding-left: 30px;
             margin: 0;

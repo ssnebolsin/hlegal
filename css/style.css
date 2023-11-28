@@ -602,8 +602,6 @@ h1, h2, h3, h4, h5, h6, a {
     display: flex;
     flex-direction: column;
     background: #FFF;
-    margin-left: 8px;
-    margin-right: 8px;
     padding-top: 64px;
     border-radius: 12px 12px 0 0;
     padding-bottom: 12px;
@@ -930,7 +928,7 @@ h1, h2, h3, h4, h5, h6, a {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 720px) {
   .team {
     max-width: 315px;
     padding-right: 0;
@@ -1029,6 +1027,16 @@ h1, h2, h3, h4, h5, h6, a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 720px) {
+  .clients__wrapper :nth-child(7),
+  .clients__wrapper :nth-child(8),
+  .clients__wrapper :nth-child(9),
+  .clients__wrapper :nth-child(10),
+  .clients__wrapper :nth-child(11),
+  .clients__wrapper :nth-child(12) {
+    display: none;
+  }
 }
 .clients__item {
   display: block;
