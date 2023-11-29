@@ -831,14 +831,19 @@ h1, h2, h3, h4, h5, h6, a {
   line-height: 30px;
   margin: 0;
 }
+@media screen and (max-width: 1024px) {
+  .offer__quality-desctiption-text {
+    width: 405px;
+  }
+}
 @media screen and (max-width: 960px) {
   .offer__quality-desctiption-text {
-    max-width: 648px;
+    width: 648px;
   }
 }
 @media screen and (max-width: 720px) {
   .offer__quality-desctiption-text {
-    max-width: 315px;
+    width: 315px;
   }
 }
 @media screen and (max-width: 960px) {
@@ -1042,6 +1047,11 @@ h1, h2, h3, h4, h5, h6, a {
   line-height: 19.5px;
   margin: 0;
   padding-bottom: 6px;
+}
+@media screen and (max-width: 960px) {
+  .team__member {
+    width: 255px;
+  }
 }
 .team__position {
   color: var(--grey-text);
@@ -1302,9 +1312,12 @@ h1, h2, h3, h4, h5, h6, a {
   margin: 0;
 }
 .footer__address-map {
+  font-size: 12px;
+  line-height: 14.63px;
   display: block;
   text-decoration: none;
   color: var(--active-regular);
+  text-transform: uppercase;
 }
 @media screen and (max-width: 720px) {
   .footer__address {

@@ -23,9 +23,12 @@
             margin: 0;
         }
         &-map{
+            font-size: 12px;
+            line-height: 14.63px;
             display: block;
             text-decoration: none;
             color: var(--active-regular);
+            text-transform: uppercase;
         }
         @media screen and (max-width: 720px) {
             flex-direction: column;
