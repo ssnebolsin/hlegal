@@ -2,7 +2,6 @@
     display: grid;
     position: absolute;    
     width: 100%;
-    // max-width: 1600px;
     z-index: 1;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -10,12 +9,6 @@
     top: 0;
     padding-top: 50px;
     box-sizing: border-box;
-    // @media screen and (max-width: 1680px) {
-    //     // max-width: 1320px;
-    // }
-    // @media screen and (max-width: 1420px) {
-    //     // max-width: 904px;
-    // }
     @media screen and (max-width: 960px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -84,8 +77,6 @@
         }
         &-tel{
             line-height: 19.5px;
-            // max-width: 104px;
-            // width: 100%;
         }
         &-fb-logo{
             @media screen and (max-width: 720px) {
@@ -187,28 +178,21 @@
             flex-direction: column;
             position: absolute;
             color: var(--active-regular);
-            // background: #fff;
-            width: 100%;
-            top: 100%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             gap: 15px;
             justify-content:  end;
             box-sizing: border-box;
-            // padding-bottom: 12px;
-            // border-radius: 12px 12px 0 0;
             margin-top: 316px;
+            position: absolute;
+            left: 8px;
+            right: 8px;
             .header__nav-list{
                 display: flex;
                 flex-direction: column;
                 background: #FFF;
-                // margin-left: 8px;
-                // margin-right: 8px;
                 padding-top: 64px;
                 border-radius: 12px 12px 0 0;
                 padding-bottom: 12px;
                 box-sizing: border-box;
-
             }
             .header__link{
                 display: block;
@@ -231,6 +215,10 @@
         }
     }
     &__logo-wrapper{
+        @media screen and (max-width: 960px) {
+            order: 2;
+            // padding-bottom: 0;
+        }
         @media screen and (max-width: 720px) {
             display: flex;
             justify-content: space-between;
