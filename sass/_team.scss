@@ -1,47 +1,48 @@
 .team {
     max-width: 1600px;
-    width: 100%;
     @media screen and (max-width: 1680px) {
         max-width: 1320px;
     }
-    @media screen and (max-width: 1420px) {
-        max-width: 904px;
-    }
     @media screen and (max-width: 960px) {
         max-width: 648px;
-        // padding-right: 0;
-    }
-    @media screen and (max-width: 720px) {
-        max-width: 315px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        // padding-right: 0;
-        padding-left: calc(50vw - 160px);
-        padding-right: calc(50vw - 160px);
     }
     &__wrapper{
         display: flex;
+        justify-content: center;
         @media screen and (max-width: 960px) {
             flex-direction: column;
             justify-content: center;
         }
         @media screen and (max-width: 720px) {
-
+            align-items: center;
+            justify-content: center;
         }
     }
     
     &__photo{
-        width: 400px;
+        display: block;
+        background-image: url("../img/team-member.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        min-width: 400px;
         height: auto;
+        box-sizing: border-box;
+        @media screen and (max-width: 1420px) {
+            background-image: url("../img/image.jpg");
+            height: 528px;
+            width: 400px;
+        }
         @media screen and (max-width: 960px) {
+            background-image: url("../img/image_team_768.jpg");
             width: auto;
             border-radius: 12px 12px 0px 0px;
         }
         @media screen and (max-width: 720px) {
+            background-image: url("../img/image_team_375.jpg");
             height: 500px;
             width: 315px;
             border-radius: 12px 12px 0px 0px;
+            padding: 0;
         }
     }
     &__link{
@@ -55,6 +56,13 @@
         text-align: left;
         background-color: var(--grey-bg);
         padding-left: 30px;
+        min-width: 504px;
+
+        @media screen and (max-width: 720px) {
+            min-width: 315px;
+            width: 315px;
+            box-sizing: border-box;
+        }
     }
     &__header{
         font-size: 38px;
@@ -64,10 +72,22 @@
         margin: 0;
         padding-top: 5px;
         padding-bottom: 30px;
+        width: 1200px;
+        @media screen and (max-width: 1440px) {
+            width: 860px;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 444px;
+        }
+        @media screen and (max-width: 786px) {
+            min-width: 588px;
+        }
+        
         @media screen and (max-width: 720px) {
             font-size: 30px;
             width: 255px;
             line-height: 36.57px;
+            min-width: 255px;
         }
     }
     &__member{
@@ -76,7 +96,11 @@
         line-height: 19.5px;
         margin: 0;
         padding-bottom: 6px;
-        @media screen and (max-width: 960px) {
+
+        @media screen and (max-width: 786px) {
+            width: 588px;
+        }
+        @media screen and (max-width: 720px) {
             width: 255px;
         }
     }
@@ -85,6 +109,7 @@
         font-size: 14px;
         line-height: 22px;
         margin: 0;
+        padding-bottom: 30px;
         @media screen and (max-width: 960px) {
             padding-bottom: 30px;
         }
