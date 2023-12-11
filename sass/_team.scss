@@ -27,6 +27,7 @@
         width: 400px;
         height: auto;
         box-sizing: border-box;
+        border-radius: 12px 0px 0px 12px;
         @media screen and (max-width: 1420px) {
             background-image: url("../img/image.jpg");
             height: 528px;
@@ -35,6 +36,7 @@
         @media screen and (max-width: 960px) {
             background-image: url("../img/image_team_768.jpg");
             width: auto;
+            height: 500px;
             border-radius: 12px 12px 0px 0px;
         }
         @media screen and (max-width: 720px) {

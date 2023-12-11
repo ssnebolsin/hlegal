@@ -994,6 +994,7 @@ h1, h2, h3, h4, h5, h6, a {
   width: 400px;
   height: auto;
   box-sizing: border-box;
+  border-radius: 12px 0px 0px 12px;
 }
 @media screen and (max-width: 1420px) {
   .team__photo {
@@ -1006,6 +1007,7 @@ h1, h2, h3, h4, h5, h6, a {
   .team__photo {
     background-image: url("../img/image_team_768.jpg");
     width: auto;
+    height: 500px;
     border-radius: 12px 12px 0px 0px;
   }
 }
