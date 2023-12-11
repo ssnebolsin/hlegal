@@ -370,8 +370,8 @@ h1, h2, h3, h4, h5, h6, a {
 }
 @media screen and (max-width: 960px) {
   .center {
-    padding-left: calc(50vw - 332px);
-    padding-right: calc(50vw - 332px);
+    padding-left: calc(50vw - 324px);
+    padding-right: calc(50vw - 324px);
   }
 }
 @media screen and (max-width: 720px) {
