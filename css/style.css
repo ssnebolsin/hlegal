@@ -991,7 +991,7 @@ h1, h2, h3, h4, h5, h6, a {
   background-image: url("../img/team-member.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  min-width: 400px;
+  width: 400px;
   height: auto;
   box-sizing: border-box;
 }
